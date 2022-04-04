@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD18A09B27FB7740000E5EFA /* Coffee&Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD18A0A027FB7746000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A09F27FB7746000E5EFA /* Assets.xcassets */; };
+		CD18A0A627FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD18A0A527FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0AA27FB7746000E5EFA /* Coffee_WatchApp.swift */; };
+		CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0AC27FB7746000E5EFA /* ContentView.swift */; };
+		CD18A0AF27FB7746000E5EFA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0AE27FB7746000E5EFA /* NotificationController.swift */; };
+		CD18A0B127FB7746000E5EFA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0B027FB7746000E5EFA /* NotificationView.swift */; };
+		CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0B227FB7746000E5EFA /* ComplicationController.swift */; };
+		CD18A0B527FB7748000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B427FB7748000E5EFA /* Assets.xcassets */; };
+		CD18A0B827FB7748000E5EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD18A09C27FB7740000E5EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD18A09027FB773F000E5EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD18A09927FB7740000E5EFA;
+			remoteInfo = "Coffee&Watch WatchKit App";
+		};
+		CD18A0A727FB7746000E5EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD18A09027FB773F000E5EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD18A0A427FB7746000E5EFA;
+			remoteInfo = "Coffee&Watch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD18A0C027FB7748000E5EFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD18A0A627FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD18A0C427FB7748000E5EFA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CD18A09B27FB7740000E5EFA /* Coffee&Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD18A09627FB7740000E5EFA /* Coffee&Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD18A09F27FB7746000E5EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD18A0A527FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Coffee&Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD18A0AA27FB7746000E5EFA /* Coffee_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_WatchApp.swift; sourceTree = "<group>"; };
+		CD18A0AC27FB7746000E5EFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD18A0AE27FB7746000E5EFA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CD18A0B027FB7746000E5EFA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CD18A0B227FB7746000E5EFA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CD18A0B427FB7748000E5EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD18A0B927FB7748000E5EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD18A0BA27FB7748000E5EFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD18A0A227FB7746000E5EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD18A08F27FB773F000E5EFA = {
+			isa = PBXGroup;
+			children = (
+				CD18A09E27FB7740000E5EFA /* Coffee&Watch WatchKit App */,
+				CD18A0A927FB7746000E5EFA /* Coffee&Watch WatchKit Extension */,
+				CD18A09727FB7740000E5EFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD18A09727FB7740000E5EFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A09627FB7740000E5EFA /* Coffee&Watch.app */,
+				CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */,
+				CD18A0A527FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD18A09E27FB7740000E5EFA /* Coffee&Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A09F27FB7746000E5EFA /* Assets.xcassets */,
+			);
+			path = "Coffee&Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		CD18A0A927FB7746000E5EFA /* Coffee&Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A0AA27FB7746000E5EFA /* Coffee_WatchApp.swift */,
+				CD18A0AC27FB7746000E5EFA /* ContentView.swift */,
+				CD18A0AE27FB7746000E5EFA /* NotificationController.swift */,
+				CD18A0B027FB7746000E5EFA /* NotificationView.swift */,
+				CD18A0B227FB7746000E5EFA /* ComplicationController.swift */,
+				CD18A0B427FB7748000E5EFA /* Assets.xcassets */,
+				CD18A0B927FB7748000E5EFA /* Info.plist */,
+				CD18A0BA27FB7748000E5EFA /* PushNotificationPayload.apns */,
+				CD18A0B627FB7748000E5EFA /* Preview Content */,
+			);
+			path = "Coffee&Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CD18A0B627FB7748000E5EFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD18A09527FB773F000E5EFA /* Coffee&Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD18A0C527FB7748000E5EFA /* Build configuration list for PBXNativeTarget "Coffee&Watch" */;
+			buildPhases = (
+				CD18A09427FB773F000E5EFA /* Resources */,
+				CD18A0C427FB7748000E5EFA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD18A09D27FB7740000E5EFA /* PBXTargetDependency */,
+			);
+			name = "Coffee&Watch";
+			productName = "Coffee&Watch";
+			productReference = CD18A09627FB7740000E5EFA /* Coffee&Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CD18A09927FB7740000E5EFA /* Coffee&Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD18A0C127FB7748000E5EFA /* Build configuration list for PBXNativeTarget "Coffee&Watch WatchKit App" */;
+			buildPhases = (
+				CD18A09827FB7740000E5EFA /* Resources */,
+				CD18A0C027FB7748000E5EFA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD18A0A827FB7746000E5EFA /* PBXTargetDependency */,
+			);
+			name = "Coffee&Watch WatchKit App";
+			productName = "Coffee&Watch WatchKit App";
+			productReference = CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CD18A0A427FB7746000E5EFA /* Coffee&Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD18A0BD27FB7748000E5EFA /* Build configuration list for PBXNativeTarget "Coffee&Watch WatchKit Extension" */;
+			buildPhases = (
+				CD18A0A127FB7746000E5EFA /* Sources */,
+				CD18A0A227FB7746000E5EFA /* Frameworks */,
+				CD18A0A327FB7746000E5EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coffee&Watch WatchKit Extension";
+			productName = "Coffee&Watch WatchKit Extension";
+			productReference = CD18A0A527FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD18A09027FB773F000E5EFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CD18A09527FB773F000E5EFA = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					CD18A09927FB7740000E5EFA = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					CD18A0A427FB7746000E5EFA = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = CD18A09327FB773F000E5EFA /* Build configuration list for PBXProject "Coffee&Watch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD18A08F27FB773F000E5EFA;
+			productRefGroup = CD18A09727FB7740000E5EFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD18A09527FB773F000E5EFA /* Coffee&Watch */,
+				CD18A09927FB7740000E5EFA /* Coffee&Watch WatchKit App */,
+				CD18A0A427FB7746000E5EFA /* Coffee&Watch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD18A09427FB773F000E5EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD18A09827FB7740000E5EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD18A0A027FB7746000E5EFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD18A0A327FB7746000E5EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD18A0B827FB7748000E5EFA /* Preview Assets.xcassets in Resources */,
+				CD18A0B527FB7748000E5EFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD18A0A127FB7746000E5EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD18A0AF27FB7746000E5EFA /* NotificationController.swift in Sources */,
+				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
+				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
+				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
+				CD18A0B127FB7746000E5EFA /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD18A09D27FB7740000E5EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD18A09927FB7740000E5EFA /* Coffee&Watch WatchKit App */;
+			targetProxy = CD18A09C27FB7740000E5EFA /* PBXContainerItemProxy */;
+		};
+		CD18A0A827FB7746000E5EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD18A0A427FB7746000E5EFA /* Coffee&Watch WatchKit Extension */;
+			targetProxy = CD18A0A727FB7746000E5EFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD18A0BB27FB7748000E5EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD18A0BC27FB7748000E5EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD18A0BE27FB7748000E5EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Coffee&Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee&Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Coffee&Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Coffee-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		CD18A0BF27FB7748000E5EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Coffee&Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee&Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Coffee&Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Coffee-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		CD18A0C227FB7748000E5EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Coffee_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Coffee&Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Coffee-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		CD18A0C327FB7748000E5EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Coffee_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Coffee&Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Coffee-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		CD18A0C627FB7748000E5EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Coffee-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD18A0C727FB7748000E5EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Coffee-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD18A09327FB773F000E5EFA /* Build configuration list for PBXProject "Coffee&Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD18A0BB27FB7748000E5EFA /* Debug */,
+				CD18A0BC27FB7748000E5EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD18A0BD27FB7748000E5EFA /* Build configuration list for PBXNativeTarget "Coffee&Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD18A0BE27FB7748000E5EFA /* Debug */,
+				CD18A0BF27FB7748000E5EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD18A0C127FB7748000E5EFA /* Build configuration list for PBXNativeTarget "Coffee&Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD18A0C227FB7748000E5EFA /* Debug */,
+				CD18A0C327FB7748000E5EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD18A0C527FB7748000E5EFA /* Build configuration list for PBXNativeTarget "Coffee&Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD18A0C627FB7748000E5EFA /* Debug */,
+				CD18A0C727FB7748000E5EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD18A09027FB773F000E5EFA /* Project object */;
+}
