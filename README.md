@@ -1,2 +1,2 @@
 # Coffee-WatchOS
-App to Apple Watch about coffe!
+App to Apple Watch about coffee!
