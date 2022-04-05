@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		241B114327FB846A0039DCF1 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B114227FB846A0039DCF1 /* Recipes.swift */; };
+		241B114327FB846A0039DCF1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B114227FB846A0039DCF1 /* Recipe.swift */; };
 		927E6ADD27FC85A000DB49C0 /* ReceitaMinuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E6ADC27FC85A000DB49C0 /* ReceitaMinuto.swift */; };
+		928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BDA6927FCC22300CCAC2D /* Method.swift */; };
 		CD18A09B27FB7740000E5EFA /* Coffee&Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD18A0A027FB7746000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A09F27FB7746000E5EFA /* Assets.xcassets */; };
 		CD18A0A627FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD18A0A527FB7746000E5EFA /* Coffee&Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,8 +65,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		241B114227FB846A0039DCF1 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		241B114227FB846A0039DCF1 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		927E6ADC27FC85A000DB49C0 /* ReceitaMinuto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaMinuto.swift; sourceTree = "<group>"; };
+		928BDA6927FCC22300CCAC2D /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		CD18A09627FB7740000E5EFA /* Coffee&Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD18A09F27FB7746000E5EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,7 +97,8 @@
 		241B113F27FB842A0039DCF1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				241B114227FB846A0039DCF1 /* Recipes.swift */,
+				241B114227FB846A0039DCF1 /* Recipe.swift */,
+				928BDA6927FCC22300CCAC2D /* Method.swift */,
 				927E6ADC27FC85A000DB49C0 /* ReceitaMinuto.swift */,
 			);
 			path = Model;
@@ -296,8 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */,
 				CD18A0AF27FB7746000E5EFA /* NotificationController.swift in Sources */,
-				241B114327FB846A0039DCF1 /* Recipes.swift in Sources */,
+				241B114327FB846A0039DCF1 /* Recipe.swift in Sources */,
 				927E6ADD27FC85A000DB49C0 /* ReceitaMinuto.swift in Sources */,
 				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
