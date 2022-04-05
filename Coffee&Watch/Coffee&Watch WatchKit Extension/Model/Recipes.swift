@@ -11,14 +11,34 @@ struct Recipe: Codable {
     var id: Int
     var title: String
     var ingredients: [Ingredient] = []
+    var accessories: [Accessory] = []
 }
 
 struct Ingredient: Codable {
+    var id: Int
     var name: String
-    var ingredientType: IngredientType
+//    var ingredientType: IngredientType
+    var quantity: Double
+    var unitOfMeasurement: IngredientUnitOfMeasurement
+    var preparation: String
+    var preparationTime: Int
 }
 
-enum IngredientType: Codable {
-    case liquid
-    case solid
+// não sei se seria necessário mais o IngredientType
+//enum IngredientType: Codable {
+//    case liquid
+//    case solid
+//}
+
+enum IngredientUnitOfMeasurement: Codable {
+    case grams
+    case mililiters
+    case teaspoons
+    case soupSpoons
+}
+
+struct Accessory: Codable {
+    var id: Int
+    var name: String
+    var description: String
 }
