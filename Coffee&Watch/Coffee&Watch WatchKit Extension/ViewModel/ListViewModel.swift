@@ -25,7 +25,7 @@ class ListViewModel{
                 time += ingredient.preparationTime
             }
             
-            recipesArray.append(RecipeDTO(title: recipe.title, complexity: recipe.complexity.description, time: "\(time) min"))
+            recipesArray.append(RecipeDTO(id: recipe.id, title: recipe.title, complexity: recipe.complexity.description, time: "\(time) min"))
         }
         
         return recipesArray
@@ -75,7 +75,8 @@ class ListViewModel{
     
 }
 
-struct RecipeDTO {
+struct RecipeDTO: Identifiable {
+    var id: Int
     var title: String
     var complexity:String
     var time: String

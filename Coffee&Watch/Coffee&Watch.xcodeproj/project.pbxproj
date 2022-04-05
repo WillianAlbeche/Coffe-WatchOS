@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		241B114327FB846A0039DCF1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B114227FB846A0039DCF1 /* Recipe.swift */; };
+		5573994327FCD9F90000C3CA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573994227FCD9F90000C3CA /* ListView.swift */; };
 		55FD508127FCCE51004A4911 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD508027FCCE51004A4911 /* ListItemView.swift */; };
 		55FD508327FCCFB4004A4911 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD508227FCCFB4004A4911 /* ListViewModel.swift */; };
 		927E6ADD27FC85A000DB49C0 /* ReceitaMinuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E6ADC27FC85A000DB49C0 /* ReceitaMinuto.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		241B114227FB846A0039DCF1 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		5573994227FCD9F90000C3CA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		55FD508027FCCE51004A4911 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		55FD508227FCCFB4004A4911 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		927E6ADC27FC85A000DB49C0 /* ReceitaMinuto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaMinuto.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				55FD508027FCCE51004A4911 /* ListItemView.swift */,
+				5573994227FCD9F90000C3CA /* ListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = CD18A08F27FB773F000E5EFA;
 			productRefGroup = CD18A09727FB7740000E5EFA /* Products */;
@@ -313,6 +317,7 @@
 				927E6ADD27FC85A000DB49C0 /* ReceitaMinuto.swift in Sources */,
 				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
+				5573994327FCD9F90000C3CA /* ListView.swift in Sources */,
 				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
 				CD18A0B127FB7746000E5EFA /* NotificationView.swift in Sources */,
 			);
