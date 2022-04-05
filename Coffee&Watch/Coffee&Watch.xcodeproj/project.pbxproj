@@ -20,6 +20,7 @@
 		CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0B227FB7746000E5EFA /* ComplicationController.swift */; };
 		CD18A0B527FB7748000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B427FB7748000E5EFA /* Assets.xcassets */; };
 		CD18A0B827FB7748000E5EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */; };
+		CD18A0EE27FCCA34000E5EFA /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD18A0B927FB7748000E5EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD18A0BA27FB7748000E5EFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,20 +104,6 @@
 				927E6ADC27FC85A000DB49C0 /* ReceitaMinuto.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		241B114027FB84310039DCF1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		241B114127FB843C0039DCF1 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CD18A08F27FB773F000E5EFA = {
@@ -148,8 +136,7 @@
 		CD18A0A927FB7746000E5EFA /* Coffee&Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				241B114127FB843C0039DCF1 /* ViewModel */,
-				241B114027FB84310039DCF1 /* View */,
+				CD18A0EC27FCCA1D000E5EFA /* View */,
 				241B113F27FB842A0039DCF1 /* Model */,
 				CD18A0AA27FB7746000E5EFA /* Coffee_WatchApp.swift */,
 				CD18A0AC27FB7746000E5EFA /* ContentView.swift */,
@@ -170,6 +157,14 @@
 				CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD18A0EC27FCCA1D000E5EFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +298,7 @@
 				CD18A0AF27FB7746000E5EFA /* NotificationController.swift in Sources */,
 				241B114327FB846A0039DCF1 /* Recipe.swift in Sources */,
 				927E6ADD27FC85A000DB49C0 /* ReceitaMinuto.swift in Sources */,
+				CD18A0EE27FCCA34000E5EFA /* DefaultButton.swift in Sources */,
 				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
 				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
