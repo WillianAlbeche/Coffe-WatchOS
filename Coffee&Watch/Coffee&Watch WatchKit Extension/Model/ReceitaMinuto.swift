@@ -43,7 +43,7 @@ struct Ingredientes {
     static var cafePele = Ingredient(
         id: 1,
         name: "Café Pelé",
-        ingredientType: .solid,
+//        ingredientType: .solid,
         quantity: 3.0,
         unitOfMeasurement: .teaspoons,
         preparation: "Adicione o café.",
@@ -52,7 +52,7 @@ struct Ingredientes {
     static var leite = Ingredient(
         id: 2,
         name: "Leite",
-        ingredientType: .liquid,
+//        ingredientType: .liquid,
         quantity: 400,
         unitOfMeasurement: .mililiters,
         preparation: "Aqueça o leite.",
@@ -61,7 +61,7 @@ struct Ingredientes {
     static var acucar = Ingredient(
         id: 3,
         name: "Açúcar",
-        ingredientType: .solid,
+//        ingredientType: .solid,
         quantity: 1.0,
         unitOfMeasurement: .soupSpoons,
         preparation: "Adicione açúcar",
@@ -70,7 +70,7 @@ struct Ingredientes {
     static var agua = Ingredient(
         id: 4,
         name: "Água",
-        ingredientType: .liquid,
+//        ingredientType: .liquid,
         quantity: 100.0,
         unitOfMeasurement: .mililiters,
         preparation: "Ferva a água",

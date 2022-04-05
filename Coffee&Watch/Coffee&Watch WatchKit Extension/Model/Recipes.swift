@@ -17,7 +17,7 @@ struct Recipe: Codable {
 struct Ingredient: Codable {
     var id: Int
     var name: String
-    var ingredientType: IngredientType
+//    var ingredientType: IngredientType
     var quantity: Double
     var unitOfMeasurement: IngredientUnitOfMeasurement
     var preparation: String
@@ -25,10 +25,10 @@ struct Ingredient: Codable {
 }
 
 // não sei se seria necessário mais o IngredientType
-enum IngredientType: Codable {
-    case liquid
-    case solid
-}
+//enum IngredientType: Codable {
+//    case liquid
+//    case solid
+//}
 
 enum IngredientUnitOfMeasurement: Codable {
     case grams
