@@ -21,7 +21,7 @@ struct DefaultButton: View {
         })
         .frame(width: 182, height: 36)
         .background(.white)
-        .cornerRadius(5)
+        .cornerRadius(22)
         .foregroundColor(.black)
     }
 }
