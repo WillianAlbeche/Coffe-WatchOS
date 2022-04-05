@@ -12,11 +12,13 @@ struct ContentView: View {
     var body: some View {
 //        Text("Hello, World!")
 //            .padding()
-        Button(action: {
-            ReceitaMinuto().mostraDetalhes(receita: Receitas.cafePeleCopa)
-        }, label: {
-            Text("Aperta")
-        })
+        
+        StepView()
+//        Button(action: {
+//            ReceitaMinuto().mostraDetalhes(receita: Receitas.cafePeleCopa)
+//        }, label: {
+//            Text("Aperta")
+//        })
     }
 }
 

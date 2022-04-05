@@ -21,6 +21,7 @@
 		CD18A0B527FB7748000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B427FB7748000E5EFA /* Assets.xcassets */; };
 		CD18A0B827FB7748000E5EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */; };
 		CD18A0EE27FCCA34000E5EFA /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */; };
+		CD18A0F027FCCF77000E5EFA /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0EF27FCCF77000E5EFA /* StepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		CD18A0B927FB7748000E5EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD18A0BA27FB7748000E5EFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		CD18A0EF27FCCF77000E5EFA /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */,
+				CD18A0EF27FCCF77000E5EFA /* StepView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				CD18A0EE27FCCA34000E5EFA /* DefaultButton.swift in Sources */,
 				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
+				CD18A0F027FCCF77000E5EFA /* StepView.swift in Sources */,
 				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
 				CD18A0B127FB7746000E5EFA /* NotificationView.swift in Sources */,
 			);
