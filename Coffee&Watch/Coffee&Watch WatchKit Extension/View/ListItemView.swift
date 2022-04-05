@@ -12,7 +12,7 @@ struct ListItemView: View {
     @State var recipe: RecipeDTO
     
     var body: some View {
-        VStack{
+        VStack(spacing: 33) {
             HStack{
                 Text(recipe.title)
                 Spacer()
@@ -23,11 +23,12 @@ struct ListItemView: View {
                 Text(recipe.complexity)
             }
         }
+        .padding(.horizontal)
     }
 }
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(recipe: RecipeDTO(title: "teste", complexity: "easy", time: "10 min"))
+        ListItemView(recipe: RecipeDTO(title: "teste", complexity: "ppp", time: "10 min"))
     }
 }
