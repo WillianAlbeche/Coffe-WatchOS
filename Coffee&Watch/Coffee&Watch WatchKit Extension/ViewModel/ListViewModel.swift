@@ -18,14 +18,16 @@ class ListViewModel{
     
     func getRecipes() -> [RecipeDTO] {
         var recipesArray: [RecipeDTO] = []
-        var time = 0
+        
         for recipe in recipes {
+            var time = 0
+            var recipesMessage: [String] = []
             
             for ingredient in recipe.ingredients {
                 time += ingredient.preparationTime
+                recipesMessage.append("\(ingredient.preparation)")
             }
-            
-            recipesArray.append(RecipeDTO(id: recipe.id, title: recipe.title, complexity: recipe.complexity.description, time: "\(time) min"))
+            recipesArray.append(RecipeDTO(id: recipe.id, title: recipe.title, complexity: recipe.complexity.description, time: "\(time) min", Ingredients: recipesMessage))
         }
         
         return recipesArray
@@ -34,43 +36,92 @@ class ListViewModel{
     
     
     func createData(){
-        // Receitas
-        recipes.append(Recipe(
-            id: 1,
-            title: "Café Pelé na Copa",
-            complexity: .easy,
-            ingredients: [
-                Ingredientes.cafePele,
-                Ingredientes.agua,
-                Ingredientes.acucar]))
         
         // Ingredientes
         ingredients.append(Ingredient(
-            id: 1,
+            id: 0,
             name: "Café Pelé",
             preparation: "Quantidade aqui tb",
             preparationTime: 1))
         
         ingredients.append(Ingredient(
-            id: 2,
+            id: 1,
             name: "Leite",
             preparation: "Aqueça o leite.",
             preparationTime: 4))
         
         ingredients.append(Ingredient(
-            id: 3,
+            id: 2,
             name: "Açúcar",
             preparation: "Adicione açúcar",
             preparationTime: 1))
         
         ingredients.append(Ingredient(
-            id: 4,
+            id: 3,
             name: "Água",
             preparation: "Ferva a água",
             preparationTime: 4))
         
+        ingredients.append(Ingredient(
+            id: 4,
+            name: "Espresso teste",
+            preparation: "AAAAAAA",
+            preparationTime: 4))
+        
+        
+        
+        
+        
+        // Receitas
+        recipes.append(Recipe(
+            id: 0,
+            title: "Café Pelé na Copa",
+            complexity: .easy,
+            ingredients: [ingredients[0], ingredients[1], ingredients[2]]
+            )
+        )
+        
+        recipes.append(Recipe(
+            id: 1,
+            title: "Café Pelé na Copa",
+            complexity: .easy,
+            ingredients: [ingredients[0], ingredients[1], ingredients[2]]
+            )
+        )
+        
+        recipes.append(Recipe(
+            id: 2,
+            title: "Café Pelé na Copa",
+            complexity: .easy,
+            ingredients: [ingredients[0], ingredients[1], ingredients[2]]
+            )
+        )
+        
+        recipes.append(Recipe(
+            id: 3,
+            title: "Espresso",
+            complexity: .easy,
+            ingredients: [ingredients[1], ingredients[4]]
+            )
+        )
+        
+        recipes.append(Recipe(
+            id: 4,
+            title: "Café Pelé na Copa",
+            complexity: .easy,
+            ingredients: [ingredients[0], ingredients[1], ingredients[2]]
+            )
+        )
+        
+        recipes.append(Recipe(
+            id: 5,
+            title: "Café Pelé na Copa",
+            complexity: .easy,
+            ingredients: [ingredients[0], ingredients[1], ingredients[2]]
+            )
+        )
     }
-
+    
     
     
 }
@@ -80,4 +131,5 @@ struct RecipeDTO: Identifiable {
     var title: String
     var complexity:String
     var time: String
+    var Ingredients: [String]
 }

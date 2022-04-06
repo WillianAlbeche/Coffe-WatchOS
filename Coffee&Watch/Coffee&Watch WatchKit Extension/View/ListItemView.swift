@@ -29,6 +29,6 @@ struct ListItemView: View {
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(recipe: RecipeDTO(id: 0, title: "teste", complexity: "ppp", time: "10 min"))
+        ListItemView(recipe: RecipeDTO(id: 0, title: "teste", complexity: "ppp", time: "10 min", Ingredients: ["3 tablespoons of coffee granules"]))
     }
 }
