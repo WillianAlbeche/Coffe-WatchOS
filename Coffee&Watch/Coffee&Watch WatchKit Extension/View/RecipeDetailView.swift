@@ -17,13 +17,18 @@ struct RecipeDetailView: View {
                 Text(actualRecipe.title)
                 Spacer()
             }
+            .padding(.leading ,5)
             Divider()
                 .background(Color.white)
             ScrollView{
-                ForEach(actualRecipe.Ingredients, id: \.self) { ingredient in
-                    Text(ingredient)
+                VStack(alignment: .leading){
+                    ForEach(actualRecipe.Ingredients, id: \.self) { ingredient in
+                        Text(ingredient)
+                            .multilineTextAlignment(.leading)
+                    }
                 }
             }
+            .padding(.leading ,15)
         }
     }
 }
