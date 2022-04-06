@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct StepView: View {
-    var textButton:String = "Next"
-    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     @State private var currentIndex = 0
+    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    
+    var textButton: String = "Next"
     var steps: [RecipeDTO] = []
+    
     var body: some View {
         VStack {
             VStack {
@@ -31,7 +33,7 @@ struct StepView: View {
                                 }
                                 .onReceive(timer, perform: { _ in
                                     withAnimation {
-                                        currentIndex = currentIndex < movies.count ? currentIndex + 1 : 0
+                                        currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
                                         print(currentIndex)
                                         proxy.scrollTo(currentIndex)
                                     }

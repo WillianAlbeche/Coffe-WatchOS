@@ -6,9 +6,9 @@
 //
 
 import Foundation
+
 struct StepDTO{
     var name: String
     var preparation: String
     var preparationTime: Int
-    
 }
