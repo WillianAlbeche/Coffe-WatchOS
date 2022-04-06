@@ -9,6 +9,9 @@ import SwiftUI
 
 struct StepView: View {
     var textButton:String = "Next"
+    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    @State private var currentIndex = 0
+    var steps: [RecipeDTO] = []
     var body: some View {
         VStack {
             VStack {
@@ -16,30 +19,44 @@ struct StepView: View {
                     ProgressBar()
                 }
                 VStack{
-                    Image(systemName: "star")
-                        .resizable()
-                        .frame(width: 36, height: 38)
-                        .foregroundColor(.white)
-                    Text("In a bowl, add in the coffee, hot water, and granulated sugar.")
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        .lineLimit(3)
-                        .frame(width: 180, height: 60, alignment: .center)
-                        
+                    ScrollViewReader { proxy in
+                        VStack {
+                            Text("tchau")
+                            ScrollView(.horizontal) {
+                                HStack {
+                                    ForEach(Array(zip(steps.indices, steps)), id: \.0) { index, step in
+                                        StepInstructionView()
+                                            .tag(index)
+                                    }
+                                }
+                                .onReceive(timer, perform: { _ in
+                                    withAnimation {
+                                        currentIndex = currentIndex < movies.count ? currentIndex + 1 : 0
+                                        print(currentIndex)
+                                        proxy.scrollTo(currentIndex)
+                                    }
+                                })
+                            }
+                            Button(action: {
+                                withAnimation {
+                                    proxy.scrollTo(currentIndex + 1)
+                                }
+                            }, label: {
+                                Text("Next")
+                            })
+                        }
+                    }
                 }
-                
             }
             VStack {
                 DefaultButton(textButton: textButton)
             }
             .offset(y:30)
         }
-        
     }
-        
 }
 
-    
+
 struct Step_Previews: PreviewProvider {
     static var previews: some View {
         StepView()
