@@ -14,11 +14,17 @@ struct ListView: View {
     @State var recipes: [RecipeDTO] = []
     
     var body: some View {
-        List(recipes) { recipe in
-            ListItemView(recipe: recipe)
-        }
-        .onAppear(){
-            recipes = viewModel.getRecipes()
+        NavigationView{
+            List(recipes) { recipe in
+                NavigationLink(destination: RecipeDetailView(actualRecipe: $recipes[recipe.id])) {
+                    ListItemView(recipe: recipe)
+                    
+                }
+            }
+            .listStyle(.carousel)
+            .onAppear(){
+                recipes = viewModel.getRecipes()
+            }
         }
     }
 }

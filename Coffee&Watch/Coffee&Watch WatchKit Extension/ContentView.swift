@@ -10,13 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-//        Text("Hello, World!")
-//            .padding()
-        Button(action: {
-            ReceitaMinuto().mostraDetalhes(receita: Receitas.cafePeleCopa)
-        }, label: {
-            Text("Aperta")
-        })
+        ListView()
+//        Button(action: {
+//            ReceitaMinuto().mostraDetalhes(receita: Receitas.cafePeleCopa)
+//        }, label: {
+//            Text("Aperta")
+//        })
     }
 }
 
