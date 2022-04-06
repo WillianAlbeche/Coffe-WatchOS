@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct DefaultButton: View {
-    var textButton: String = "Texto padrão"
+    @State var textButton: String = "Texto padrão"
     
     var body: some View {
         Button(action: {
             print("Apertado!")
+            
         }, label: {
             Text(textButton)
                 .font(.system(size: 20))

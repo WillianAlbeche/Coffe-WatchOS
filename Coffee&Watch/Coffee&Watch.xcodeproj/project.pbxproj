@@ -22,6 +22,7 @@
 		CD18A0B827FB7748000E5EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */; };
 		CD18A0EE27FCCA34000E5EFA /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */; };
 		CD18A0F027FCCF77000E5EFA /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0EF27FCCF77000E5EFA /* StepView.swift */; };
+		CD18A0F227FE0338000E5EFA /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0F127FE0338000E5EFA /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		CD18A0BA27FB7748000E5EFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		CD18A0EF27FCCF77000E5EFA /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		CD18A0F127FE0338000E5EFA /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				CD18A0ED27FCCA34000E5EFA /* DefaultButton.swift */,
 				CD18A0EF27FCCF77000E5EFA /* StepView.swift */,
+				CD18A0F127FE0338000E5EFA /* ProgressBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */,
+				CD18A0F227FE0338000E5EFA /* ProgressBar.swift in Sources */,
 				CD18A0AF27FB7746000E5EFA /* NotificationController.swift in Sources */,
 				241B114327FB846A0039DCF1 /* Recipe.swift in Sources */,
 				927E6ADD27FC85A000DB49C0 /* ReceitaMinuto.swift in Sources */,
