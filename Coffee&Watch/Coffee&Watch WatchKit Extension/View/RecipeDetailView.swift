@@ -12,7 +12,11 @@ struct RecipeDetailView: View {
     
     var body: some View {
         VStack{
-            Text(actualRecipe.title)
+            HStack(){
+                Image(systemName: "cup.and.saucer.fill")
+                Text(actualRecipe.title)
+                Spacer()
+            }
             Divider()
                 .background(Color.white)
             ScrollView{
