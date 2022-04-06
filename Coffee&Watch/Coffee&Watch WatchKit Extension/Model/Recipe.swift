@@ -21,8 +21,20 @@ struct Ingredient {
     var preparationTime: Int
 }
 
-enum Complexity {
+enum Complexity: CustomStringConvertible {
     case easy
     case medium
     case difficult
+    
+    var description: String {
+        switch self {
+        case .easy:
+            return NSLocalizedString("easy", comment: "")
+        case .medium:
+            return NSLocalizedString("medium", comment: "")
+        case .difficult:
+            return NSLocalizedString("difficult", comment: "")
+            
+        }
+    }
 }
