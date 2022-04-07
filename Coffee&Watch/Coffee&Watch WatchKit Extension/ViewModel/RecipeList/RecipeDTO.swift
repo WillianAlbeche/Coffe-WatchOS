@@ -10,6 +10,7 @@ import Foundation
 struct RecipeDTO: Identifiable {
     var id: Int
     var title: String
+    var imageName:String
     var complexity: String
     var time: String
     var ingredients: [String]
