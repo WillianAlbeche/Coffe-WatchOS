@@ -12,7 +12,7 @@ struct StepInstructionView: View {
 
     var body: some View {
         VStack{
-            Image(systemName: "star")
+            Image(systemName: "\(step.icon)")
                 .resizable()
                 .frame(width: 36, height: 38)
                 .foregroundColor(.white)
