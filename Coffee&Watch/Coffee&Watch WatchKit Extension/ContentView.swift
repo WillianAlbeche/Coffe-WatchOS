@@ -11,7 +11,8 @@ struct ContentView: View {
     
     var body: some View {
 
-        ListView()
+//        ListView()
+        ProgressButton(progress: CGFloat(0.0))
 
 //        Button(action: {
 //            ReceitaMinuto().mostraDetalhes(receita: Receitas.cafePeleCopa)
