@@ -8,8 +8,7 @@
 import Foundation
 
 class StepViewModel: ObservableObject {
-    @Published var stepsDTO: [StepDTO] = []
-    
+
 //    func getRecipe (id: Int)  {
 //        addStep(recipe: LocalData.recipes[id])
 //    }
@@ -24,22 +23,23 @@ class StepViewModel: ObservableObject {
 //        }
 //    }
     
-    func findRecipeById(id: Int) {
-        if let recipe = LocalData.recipes.first(where: {$0.id == id}) {
-            getRecipeSteps(recipe: recipe)
-        } else {
-            print("Error")
+    func getRecipeSteps(recipeId: Int) -> [StepDTO] {
+        var stepsDTO: [StepDTO] = []
+
+        guard let recipe = LocalData.recipes.first(where: {$0.id == recipeId}) else {
+            print("Error: recipe did not found.")
+            return stepsDTO
         }
-    }
-    
-    private func getRecipeSteps(recipe: Recipe) {
+
         let preparation = recipe.preparation
-        
+
         for step in preparation {
             let stepDTO = StepDTO(preparation: step.0,
                                   preparationTime: step.1)
             
             stepsDTO.append(stepDTO)
         }
+
+        return stepsDTO
     }
 }

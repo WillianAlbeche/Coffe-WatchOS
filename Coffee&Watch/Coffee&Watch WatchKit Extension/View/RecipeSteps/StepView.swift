@@ -9,15 +9,13 @@ import SwiftUI
 
 struct StepView: View {
     @State private var currentIndex = 0
-    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     
     @ObservedObject var viewModel: StepViewModel
+    @State var steps: [StepDTO] = []
     
     var textButton: String = "Next"
     var recipeId: Int
-    var steps: [StepDTO] = {
-        StepViewModel().stepsDTO
-    }()
     
     var body: some View {
 
@@ -60,15 +58,15 @@ struct StepView: View {
             }
             .offset(y:30)
         }.onAppear {
-            viewModel.findRecipeById(id: recipeId)
+            steps = viewModel.getRecipeSteps(recipeId: recipeId)
 //            viewModel.getRecipe(id: 1)
         }
     }
 }
 
 
-//struct Step_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StepView(viewModel: StepViewModel(), recipeId: 0)
-//    }
-//}
+struct Step_Previews: PreviewProvider {
+    static var previews: some View {
+        StepView(viewModel: StepViewModel(), recipeId: 0)
+    }
+}

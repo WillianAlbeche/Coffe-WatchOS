@@ -28,8 +28,8 @@ struct StepInstructionView: View {
     }
 }
 
-//struct StepInstructionView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StepInstructionView(step: <#StepDTO#>)
-//    }
-//}
+struct StepInstructionView_Previews: PreviewProvider {
+    static var previews: some View {
+        StepInstructionView(step: StepDTO(preparation: "prepara", preparationTime: 3))
+    }
+}

@@ -15,13 +15,6 @@ struct Recipe {
     var preparation: [(String, Int)]
 }
 
-struct Ingredient {
-    var id: Int
-    var name: String
-    var preparation: String
-    var preparationTime: Int
-}
-
 enum Complexity: CustomStringConvertible {
     case easy
     case medium
