@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProgressBar: View {
-    @State var totalStepsRecipe: Int = 1
+    @State var totalStepsRecipe: Int = 20
     var oneStepValue: Int = 1
     @State var percentProgress: Double = 0.25
     //  total de passos = 100 / pelo numero de steps

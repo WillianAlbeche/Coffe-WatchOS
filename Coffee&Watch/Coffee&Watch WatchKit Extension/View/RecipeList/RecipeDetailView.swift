@@ -13,14 +13,14 @@ struct RecipeDetailView: View {
     var body: some View {
         VStack{
             HStack(){
-                Image(actualRecipe.imageName)
+                Image(systemName: actualRecipe.imageName)
                     .resizable()
                     .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
                     .frame(width: 30, height: 30)
                     
                 Text(actualRecipe.title)
                     .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
-                    .frame(width: 150, alignment: .leading)
+                    //.frame(width: 150, alignment: .leading)
                 Spacer()
                             }
             .padding(.leading ,5)
