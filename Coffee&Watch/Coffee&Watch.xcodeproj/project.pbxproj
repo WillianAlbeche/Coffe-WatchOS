@@ -15,6 +15,9 @@
 		927A0F3C27FE21A100C73444 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F3B27FE21A100C73444 /* LocalData.swift */; };
 		927A0F3E27FE245200C73444 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F3D27FE245200C73444 /* RecipeDTO.swift */; };
 		927A0F4527FE250400C73444 /* StepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F4427FE250400C73444 /* StepViewModel.swift */; };
+		927A0F4727FF577900C73444 /* ButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F4627FF577900C73444 /* ButtonBar.swift */; };
+		927A0F4927FF585100C73444 /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F4827FF585100C73444 /* ProgressButton.swift */; };
+		927A0F4C27FF674000C73444 /* circlebitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F4B27FF674000C73444 /* circlebitch.swift */; };
 		928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BDA6927FCC22300CCAC2D /* Method.swift */; };
 		CD18A09B27FB7740000E5EFA /* Coffee&Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD18A0A027FB7746000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A09F27FB7746000E5EFA /* Assets.xcassets */; };
@@ -84,6 +87,9 @@
 		927A0F3B27FE21A100C73444 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		927A0F3D27FE245200C73444 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
 		927A0F4427FE250400C73444 /* StepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewModel.swift; sourceTree = "<group>"; };
+		927A0F4627FF577900C73444 /* ButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBar.swift; sourceTree = "<group>"; };
+		927A0F4827FF585100C73444 /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		927A0F4B27FF674000C73444 /* circlebitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circlebitch.swift; sourceTree = "<group>"; };
 		928BDA6927FCC22300CCAC2D /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		CD18A09627FB7740000E5EFA /* Coffee&Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +163,7 @@
 			children = (
 				CDEC84C127FE1AF400354286 /* DefaultButton.swift */,
 				CDEC84BF27FE1AF400354286 /* ProgressBar.swift */,
+				927A0F4A27FF61AE00C73444 /* ProgressButton */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -198,9 +205,19 @@
 			path = RecipeSteps;
 			sourceTree = "<group>";
 		};
+		927A0F4A27FF61AE00C73444 /* ProgressButton */ = {
+			isa = PBXGroup;
+			children = (
+				927A0F4627FF577900C73444 /* ButtonBar.swift */,
+				927A0F4827FF585100C73444 /* ProgressButton.swift */,
+			);
+			path = ProgressButton;
+			sourceTree = "<group>";
+		};
 		CD18A08F27FB773F000E5EFA = {
 			isa = PBXGroup;
 			children = (
+				927A0F4B27FF674000C73444 /* circlebitch.swift */,
 				CD18A09E27FB7740000E5EFA /* Coffee&Watch WatchKit App */,
 				CD18A0A927FB7746000E5EFA /* Coffee&Watch WatchKit Extension */,
 				CD18A09727FB7740000E5EFA /* Products */,
@@ -382,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FD508327FCCFB4004A4911 /* ListViewModel.swift in Sources */,
+				927A0F4727FF577900C73444 /* ButtonBar.swift in Sources */,
 				CD6A6A6C27FE1D8C0081C3FC /* StepInstructionView.swift in Sources */,
 				55FD508127FCCE51004A4911 /* ListItemView.swift in Sources */,
 				928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */,
@@ -390,11 +408,13 @@
 				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
 				381D19EA27FE03C800771B6A /* RecipeDetailView.swift in Sources */,
 				CDEC84C327FE1AF400354286 /* StepView.swift in Sources */,
+				927A0F4C27FF674000C73444 /* circlebitch.swift in Sources */,
 				927A0F3E27FE245200C73444 /* RecipeDTO.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
 				5573994327FCD9F90000C3CA /* ListView.swift in Sources */,
 				CD6A6A6E27FE1EF70081C3FC /* StepDTO.swift in Sources */,
 				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
+				927A0F4927FF585100C73444 /* ProgressButton.swift in Sources */,
 				CDEC84C227FE1AF400354286 /* ProgressBar.swift in Sources */,
 				CD18A0B127FB7746000E5EFA /* NotificationView.swift in Sources */,
 				927A0F3C27FE21A100C73444 /* LocalData.swift in Sources */,
