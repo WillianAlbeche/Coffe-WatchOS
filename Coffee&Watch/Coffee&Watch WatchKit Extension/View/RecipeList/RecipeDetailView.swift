@@ -34,7 +34,7 @@ struct RecipeDetailView: View {
                     ForEach(actualRecipe.ingredients, id: \.self) { ingredient in
                         Text(ingredient)
                             .multilineTextAlignment(.leading)
-                        Divider()
+                        Spacer()
                         
                     }
                     
