@@ -22,9 +22,12 @@ struct RecipeDetailView: View {
                 .background(Color.white)
             ScrollView{
                 VStack(alignment: .leading){
-                    ForEach(actualRecipe.Ingredients, id: \.self) { ingredient in
+                    ForEach(actualRecipe.ingredients, id: \.self) { ingredient in
                         Text(ingredient)
                             .multilineTextAlignment(.leading)
+                    }
+                    NavigationLink(destination: StepView(viewModel: StepViewModel(), recipeId: actualRecipe.id)) {
+                        Text("Prepare")
                     }
                 }
             }
@@ -35,6 +38,6 @@ struct RecipeDetailView: View {
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetailView(actualRecipe: Binding.constant(RecipeDTO(id: 3, title: "SADASDA", complexity: "easy", time: "3 min", Ingredients: ["teste de ingrediente"])))
+        RecipeDetailView(actualRecipe: Binding.constant(RecipeDTO(id: 3, title: "SADASDA", complexity: "easy", time: "3 min", ingredients: ["teste de ingrediente"])))
     }
 }

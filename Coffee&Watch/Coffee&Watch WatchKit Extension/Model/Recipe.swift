@@ -2,7 +2,7 @@
 //  Recipe.swift
 //  Coffee&Watch WatchKit Extension
 //
-//  Created by Bárbara Araújo Paim  on 04/04/22.
+//  Created by Bárbara Araújo Paim on 04/04/22.
 //
 
 import Foundation
@@ -11,7 +11,8 @@ struct Recipe {
     var id: Int
     var title: String
     var complexity: Complexity
-    var ingredients: [Ingredient] = []
+    var ingredients: [String]
+    var preparation: [(String, Int)]
 }
 
 struct Ingredient {

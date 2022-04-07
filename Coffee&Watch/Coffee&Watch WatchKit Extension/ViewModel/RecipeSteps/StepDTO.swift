@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct StepDTO{
-    var name: String
+struct StepDTO {
     var preparation: String
     var preparationTime: Int
+    var icon: StepIcon = .something
+}
+
+enum StepIcon {
+    case something
 }

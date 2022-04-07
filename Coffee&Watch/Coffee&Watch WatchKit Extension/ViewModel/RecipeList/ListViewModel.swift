@@ -15,14 +15,17 @@ class ListViewModel{
         var recipesArray: [RecipeDTO] = []
         
         for recipe in recipes {
-            var time = 0
-            var recipesMessage: [String] = []
+            var preparationTime = 0
             
-            for ingredient in recipe.ingredients {
-                time += ingredient.preparationTime
-                recipesMessage.append("\(ingredient.preparation)")
+            for preparationItem in recipe.preparation {
+                preparationTime += preparationItem.1
             }
-            recipesArray.append(RecipeDTO(id: recipe.id, title: recipe.title, complexity: recipe.complexity.description, time: "\(time) min", Ingredients: recipesMessage))
+            
+            recipesArray.append(RecipeDTO(id: recipe.id,
+                                          title: recipe.title,
+                                          complexity: recipe.complexity.description,
+                                          time: "\(preparationTime) min",
+                                          ingredients: recipe.ingredients))
         }
         
         return recipesArray

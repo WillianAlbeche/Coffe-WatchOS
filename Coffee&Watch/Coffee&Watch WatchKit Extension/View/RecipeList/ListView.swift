@@ -18,7 +18,6 @@ struct ListView: View {
             List(recipes) { recipe in
                 NavigationLink(destination: RecipeDetailView(actualRecipe: $recipes[recipe.id])) {
                     ListItemView(recipe: recipe)
-                    
                 }
             }
             .listStyle(.carousel)

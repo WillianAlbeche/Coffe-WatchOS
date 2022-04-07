@@ -11,23 +11,28 @@ struct StepView: View {
     @State private var currentIndex = 0
     private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     
+    @ObservedObject var viewModel: StepViewModel
+    
     var textButton: String = "Next"
-    var steps: [RecipeDTO] = []
+    var recipeId: Int
+    var steps: [StepDTO] = {
+        StepViewModel().stepsDTO
+    }()
     
     var body: some View {
+
         VStack {
             VStack {
-                HStack(alignment: .center){
+                HStack(alignment: .center) {
                     ProgressBar()
                 }
-                VStack{
+                VStack {
                     ScrollViewReader { proxy in
                         VStack {
-                            Text("tchau")
                             ScrollView(.horizontal) {
                                 HStack {
                                     ForEach(Array(zip(steps.indices, steps)), id: \.0) { index, step in
-                                        StepInstructionView()
+                                        StepInstructionView(step: step)
                                             .tag(index)
                                     }
                                 }
@@ -39,13 +44,13 @@ struct StepView: View {
                                     }
                                 })
                             }
-                            Button(action: {
-                                withAnimation {
-                                    proxy.scrollTo(currentIndex + 1)
-                                }
-                            }, label: {
-                                Text("Next")
-                            })
+//                            Button(action: {
+//                                withAnimation {
+//                                    proxy.scrollTo(currentIndex + 1)
+//                                }
+//                            }, label: {
+//                                Text("Next")
+//                            })
                         }
                     }
                 }
@@ -54,13 +59,16 @@ struct StepView: View {
                 DefaultButton(textButton: textButton)
             }
             .offset(y:30)
+        }.onAppear {
+            viewModel.findRecipeById(id: recipeId)
+//            viewModel.getRecipe(id: 1)
         }
     }
 }
 
 
-struct Step_Previews: PreviewProvider {
-    static var previews: some View {
-        StepView()
-    }
-}
+//struct Step_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StepView(viewModel: StepViewModel(), recipeId: 0)
+//    }
+//}
