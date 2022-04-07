@@ -12,6 +12,9 @@
 		5573994327FCD9F90000C3CA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573994227FCD9F90000C3CA /* ListView.swift */; };
 		55FD508127FCCE51004A4911 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD508027FCCE51004A4911 /* ListItemView.swift */; };
 		55FD508327FCCFB4004A4911 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD508227FCCFB4004A4911 /* ListViewModel.swift */; };
+		927A0F3C27FE21A100C73444 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F3B27FE21A100C73444 /* LocalData.swift */; };
+		927A0F3E27FE245200C73444 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F3D27FE245200C73444 /* RecipeDTO.swift */; };
+		927A0F4527FE250400C73444 /* StepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A0F4427FE250400C73444 /* StepViewModel.swift */; };
 		928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BDA6927FCC22300CCAC2D /* Method.swift */; };
 		CD18A09B27FB7740000E5EFA /* Coffee&Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD18A0A027FB7746000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A09F27FB7746000E5EFA /* Assets.xcassets */; };
@@ -23,6 +26,8 @@
 		CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18A0B227FB7746000E5EFA /* ComplicationController.swift */; };
 		CD18A0B527FB7748000E5EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B427FB7748000E5EFA /* Assets.xcassets */; };
 		CD18A0B827FB7748000E5EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */; };
+		CD6A6A6C27FE1D8C0081C3FC /* StepInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A6A6B27FE1D8C0081C3FC /* StepInstructionView.swift */; };
+		CD6A6A6E27FE1EF70081C3FC /* StepDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A6A6D27FE1EF70081C3FC /* StepDTO.swift */; };
 		CDEC84C227FE1AF400354286 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEC84BF27FE1AF400354286 /* ProgressBar.swift */; };
 		CDEC84C327FE1AF400354286 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEC84C027FE1AF400354286 /* StepView.swift */; };
 		CDEC84C427FE1AF400354286 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEC84C127FE1AF400354286 /* DefaultButton.swift */; };
@@ -76,6 +81,9 @@
 		5573994227FCD9F90000C3CA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		55FD508027FCCE51004A4911 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		55FD508227FCCFB4004A4911 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		927A0F3B27FE21A100C73444 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		927A0F3D27FE245200C73444 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
+		927A0F4427FE250400C73444 /* StepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewModel.swift; sourceTree = "<group>"; };
 		928BDA6927FCC22300CCAC2D /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		CD18A09627FB7740000E5EFA /* Coffee&Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD18A09A27FB7740000E5EFA /* Coffee&Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +98,8 @@
 		CD18A0B727FB7748000E5EFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD18A0B927FB7748000E5EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD18A0BA27FB7748000E5EFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CD6A6A6B27FE1D8C0081C3FC /* StepInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepInstructionView.swift; sourceTree = "<group>"; };
+		CD6A6A6D27FE1EF70081C3FC /* StepDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDTO.swift; sourceTree = "<group>"; };
 		CDEC84BF27FE1AF400354286 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		CDEC84C027FE1AF400354286 /* StepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		CDEC84C127FE1AF400354286 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
@@ -118,12 +128,9 @@
 		55FD507E27FCCE2B004A4911 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CDEC84C127FE1AF400354286 /* DefaultButton.swift */,
-				CDEC84BF27FE1AF400354286 /* ProgressBar.swift */,
-				CDEC84C027FE1AF400354286 /* StepView.swift */,
-				55FD508027FCCE51004A4911 /* ListItemView.swift */,
-				5573994227FCD9F90000C3CA /* ListView.swift */,
-				381D19E927FE03C800771B6A /* RecipeDetailView.swift */,
+				927A0F3F27FE247600C73444 /* UIComponents */,
+				927A0F4027FE248800C73444 /* RecipeList */,
+				927A0F4127FE24C800C73444 /* RecipeSteps */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,9 +138,64 @@
 		55FD507F27FCCE40004A4911 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				55FD508227FCCFB4004A4911 /* ListViewModel.swift */,
+				927A0F4227FE24E000C73444 /* RecipeList */,
+				927A0F4327FE24EB00C73444 /* RecipeSteps */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		927A0F3A27FE218D00C73444 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				927A0F3B27FE21A100C73444 /* LocalData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		927A0F3F27FE247600C73444 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CDEC84C127FE1AF400354286 /* DefaultButton.swift */,
+				CDEC84BF27FE1AF400354286 /* ProgressBar.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		927A0F4027FE248800C73444 /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				5573994227FCD9F90000C3CA /* ListView.swift */,
+				55FD508027FCCE51004A4911 /* ListItemView.swift */,
+				381D19E927FE03C800771B6A /* RecipeDetailView.swift */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		927A0F4127FE24C800C73444 /* RecipeSteps */ = {
+			isa = PBXGroup;
+			children = (
+				CDEC84C027FE1AF400354286 /* StepView.swift */,
+				CD6A6A6B27FE1D8C0081C3FC /* StepInstructionView.swift */,
+			);
+			path = RecipeSteps;
+			sourceTree = "<group>";
+		};
+		927A0F4227FE24E000C73444 /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				927A0F3D27FE245200C73444 /* RecipeDTO.swift */,
+				55FD508227FCCFB4004A4911 /* ListViewModel.swift */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		927A0F4327FE24EB00C73444 /* RecipeSteps */ = {
+			isa = PBXGroup;
+			children = (
+				CD6A6A6D27FE1EF70081C3FC /* StepDTO.swift */,
+				927A0F4427FE250400C73444 /* StepViewModel.swift */,
+			);
+			path = RecipeSteps;
 			sourceTree = "<group>";
 		};
 		CD18A08F27FB773F000E5EFA = {
@@ -166,6 +228,7 @@
 		CD18A0A927FB7746000E5EFA /* Coffee&Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				927A0F3A27FE218D00C73444 /* Data */,
 				55FD507F27FCCE40004A4911 /* ViewModel */,
 				55FD507E27FCCE2B004A4911 /* View */,
 				241B113F27FB842A0039DCF1 /* Model */,
@@ -319,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FD508327FCCFB4004A4911 /* ListViewModel.swift in Sources */,
+				CD6A6A6C27FE1D8C0081C3FC /* StepInstructionView.swift in Sources */,
 				55FD508127FCCE51004A4911 /* ListItemView.swift in Sources */,
 				928BDA6A27FCC22300CCAC2D /* Method.swift in Sources */,
 				CD18A0AF27FB7746000E5EFA /* NotificationController.swift in Sources */,
@@ -326,12 +390,16 @@
 				CD18A0AD27FB7746000E5EFA /* ContentView.swift in Sources */,
 				381D19EA27FE03C800771B6A /* RecipeDetailView.swift in Sources */,
 				CDEC84C327FE1AF400354286 /* StepView.swift in Sources */,
+				927A0F3E27FE245200C73444 /* RecipeDTO.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
 				5573994327FCD9F90000C3CA /* ListView.swift in Sources */,
+				CD6A6A6E27FE1EF70081C3FC /* StepDTO.swift in Sources */,
 				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
 				CDEC84C227FE1AF400354286 /* ProgressBar.swift in Sources */,
 				CD18A0B127FB7746000E5EFA /* NotificationView.swift in Sources */,
+				927A0F3C27FE21A100C73444 /* LocalData.swift in Sources */,
 				CDEC84C427FE1AF400354286 /* DefaultButton.swift in Sources */,
+				927A0F4527FE250400C73444 /* StepViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
