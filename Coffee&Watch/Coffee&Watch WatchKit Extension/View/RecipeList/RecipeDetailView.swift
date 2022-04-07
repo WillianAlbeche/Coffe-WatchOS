@@ -13,25 +13,41 @@ struct RecipeDetailView: View {
     var body: some View {
         VStack{
             HStack(){
-                Image(systemName: "cup.and.saucer.fill")
+                Image("Asset 8")
+                    .resizable()
+                    .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
+                    .frame(width: 30, height: 30)
+                    
                 Text(actualRecipe.title)
+                    .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
+                    .frame(width: 150, alignment: .leading)
                 Spacer()
-            }
+                            }
             .padding(.leading ,5)
-            Divider()
-                .background(Color.white)
+            Rectangle()
+                .cornerRadius(3.5)
+                .frame(width: 195, height: 3)
+                .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
+                
             ScrollView{
                 VStack(alignment: .leading){
                     ForEach(actualRecipe.ingredients, id: \.self) { ingredient in
                         Text(ingredient)
                             .multilineTextAlignment(.leading)
+                        Divider()
+                        
                     }
+                    
+                }
+                .padding(.leading ,15)
+                VStack(alignment: .center) {
                     NavigationLink(destination: StepView(viewModel: StepViewModel(), recipeId: actualRecipe.id)) {
                         Text("Prepare")
                     }
+                    .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
                 }
             }
-            .padding(.leading ,15)
+            
         }
     }
 }
