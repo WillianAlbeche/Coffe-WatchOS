@@ -13,7 +13,7 @@ struct RecipeDetailView: View {
     var body: some View {
         VStack{
             HStack(){
-                Image("Asset 8")
+                Image(actualRecipe.imageName)
                     .resizable()
                     .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
                     .frame(width: 30, height: 30)
