@@ -54,8 +54,9 @@ struct StepView: View {
                 }
             }
             VStack {
-                DefaultButton(textButton: textButton)
+                    DefaultButton(textButton: textButton)
             }
+            
             .offset(y:30)
         }.onAppear {
             steps = viewModel.getRecipeSteps(recipeId: recipeId)

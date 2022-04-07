@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		241B114327FB846A0039DCF1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B114227FB846A0039DCF1 /* Recipe.swift */; };
+		241B114927FF55840039DCF1 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B114827FF55840039DCF1 /* FinalView.swift */; };
 		381D19EA27FE03C800771B6A /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381D19E927FE03C800771B6A /* RecipeDetailView.swift */; };
 		5573994327FCD9F90000C3CA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573994227FCD9F90000C3CA /* ListView.swift */; };
 		55FD508127FCCE51004A4911 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD508027FCCE51004A4911 /* ListItemView.swift */; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		241B114227FB846A0039DCF1 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		241B114827FF55840039DCF1 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		381D19E927FE03C800771B6A /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		5573994227FCD9F90000C3CA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		55FD508027FCCE51004A4911 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				927A0F3F27FE247600C73444 /* UIComponents */,
 				927A0F4027FE248800C73444 /* RecipeList */,
 				927A0F4127FE24C800C73444 /* RecipeSteps */,
+				241B114827FF55840039DCF1 /* FinalView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				927A0F4C27FF674000C73444 /* circlebitch.swift in Sources */,
 				927A0F3E27FE245200C73444 /* RecipeDTO.swift in Sources */,
 				CD18A0B327FB7746000E5EFA /* ComplicationController.swift in Sources */,
+				241B114927FF55840039DCF1 /* FinalView.swift in Sources */,
 				5573994327FCD9F90000C3CA /* ListView.swift in Sources */,
 				CD6A6A6E27FE1EF70081C3FC /* StepDTO.swift in Sources */,
 				CD18A0AB27FB7746000E5EFA /* Coffee_WatchApp.swift in Sources */,
