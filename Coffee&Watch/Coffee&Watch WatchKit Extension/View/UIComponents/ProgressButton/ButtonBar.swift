@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ButtonBar: View {
-    @State var progress: CGFloat
+    @Binding var progress: CGFloat
 
     var body: some View {
         GeometryReader { geometry in
@@ -16,15 +16,9 @@ struct ButtonBar: View {
                 Rectangle()
                     .foregroundColor(.gray)
                 Rectangle()
-                    .foregroundColor(.corBR)
+                    .foregroundColor(.green)
                     .frame(width: min(progress * geometry.size.width, geometry.size.width))
             }
         }
-    }
-}
-
-struct ButtonShape_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonBar(progress: CGFloat(0.03))
     }
 }
