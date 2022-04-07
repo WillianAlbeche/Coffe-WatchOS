@@ -54,6 +54,6 @@ struct RecipeDetailView: View {
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetailView(actualRecipe: Binding.constant(RecipeDTO(id: 3, title: "SADASDA", complexity: "easy", time: "3 min", ingredients: ["teste de ingrediente"])))
+        RecipeDetailView(actualRecipe: Binding.constant(RecipeDTO(id: 3, title: "SADASDA", imageName: "cup.and.saucer.fill", complexity: "easy", time: "3 min", ingredients: ["teste de ingrediente"])))
     }
 }

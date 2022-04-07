@@ -10,7 +10,7 @@ import Foundation
 struct LocalData {
     static var recipes: [Recipe] =
         [Recipe(id: 0,
-                title: "Biscoff Cloud Coffee",
+                title: "Biscoff Cloud Coffee", imageName: "Asset 8",
                 complexity: .medium,
                 ingredients: ["3 tablespoons of coffee granules",
                               "3 tablespoons of hot water",

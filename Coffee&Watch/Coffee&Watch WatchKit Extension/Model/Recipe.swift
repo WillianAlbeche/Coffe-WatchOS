@@ -10,6 +10,7 @@ import Foundation
 struct Recipe {
     var id: Int
     var title: String
+    var imageName:String
     var complexity: Complexity
     var ingredients: [String]
     var preparation: [(String, Int)]
