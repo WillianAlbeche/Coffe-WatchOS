@@ -35,7 +35,7 @@ class StepViewModel: ObservableObject {
 
         for step in preparation {
             let stepDTO = StepDTO(preparation: step.0,
-                                  preparationTime: step.1)
+                                  preparationTime: step.1, icon: step.2)
             
             stepsDTO.append(stepDTO)
         }

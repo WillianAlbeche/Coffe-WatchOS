@@ -9,10 +9,10 @@ import SwiftUI
 
 struct StepInstructionView: View {
     var step: StepDTO
-
+    
     var body: some View {
         VStack{
-            Image(systemName: "\(step.icon)")
+            Image(step.icon)
                 .resizable()
                 .frame(width: 36, height: 38)
                 .foregroundColor(.white)
@@ -30,6 +30,6 @@ struct StepInstructionView: View {
 
 struct StepInstructionView_Previews: PreviewProvider {
     static var previews: some View {
-        StepInstructionView(step: StepDTO(preparation: "prepara", preparationTime: 3))
+        StepInstructionView(step: StepDTO(preparation: "prepara", preparationTime: 3, icon: "asset4"))
     }
 }

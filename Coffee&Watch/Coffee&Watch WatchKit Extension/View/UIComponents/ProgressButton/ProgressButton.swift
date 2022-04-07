@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProgressButton: View {
-    private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var progress = CGFloat(0)
 
     var body: some View {
@@ -20,7 +20,7 @@ struct ProgressButton: View {
         }
         .onReceive(timer, perform: { _ in
             withAnimation {
-                progress = progress < CGFloat(1) ? progress + CGFloat(0.1) : 1
+                progress = progress < CGFloat(1) ? progress + CGFloat(0.34) : 0
             }
 
         })

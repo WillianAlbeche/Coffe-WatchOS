@@ -19,6 +19,7 @@ struct ListItemView: View {
                     Image(uiImage: UIImage(named: recipe.imageName) ?? UIImage(systemName: "cup.and.saucer.fill")!)
                         .resizable()
                         .scaledToFit()
+                        .foregroundColor(Color("YellowColor"))
                         .frame(width: 40, height: 40, alignment: Alignment.center)
                     Text(recipe.title)
                         .font(.system(size: 20))

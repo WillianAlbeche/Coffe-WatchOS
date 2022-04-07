@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StepView: View {
     @State private var currentIndex = 0
-    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
     
     @ObservedObject var viewModel: StepViewModel
     @State var steps: [StepDTO] = []
@@ -22,14 +22,13 @@ struct StepView: View {
         VStack {
             VStack {
                 HStack(alignment: .center) {
-                    //change viewModwel to steps
                     let percentCalculate = Double(currentIndex)/Double(viewModel.getRecipeSteps(recipeId: recipeId).count)
                     ProgressBar(totalStepsRecipe: viewModel.getRecipeSteps(recipeId: recipeId).count, percentProgress: Binding.constant(percentCalculate))
                 }
                 VStack {
                     ScrollViewReader { proxy in
                         VStack {
-                            ScrollView(.horizontal) {
+                            ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(Array(zip(steps.indices, steps)), id: \.0) { index, step in
                                         StepInstructionView(step: step)
@@ -39,30 +38,21 @@ struct StepView: View {
                                 .onReceive(timer, perform: { _ in
                                     withAnimation {
                                         currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
-//                                        print(currentIndex)
                                         proxy.scrollTo(currentIndex)
                                     }
                                 })
                             }
-                            //                            Button(action: {
-                            //                                withAnimation {
-                            //                                    proxy.scrollTo(currentIndex + 1)
-                            //                                }
-                            //                            }, label: {
-                            //                                Text("Next")
-                            //                            })
                         }
                     }
                 }
             }
             VStack {
-                    DefaultButton(textButton: textButton)
+                ProgressButton()
             }
             
             .offset(y:30)
         }.onAppear {
             steps = viewModel.getRecipeSteps(recipeId: recipeId)
-            //            viewModel.getRecipe(id: 1)
         }
     }
 }

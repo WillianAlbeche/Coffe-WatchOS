@@ -13,9 +13,10 @@ struct RecipeDetailView: View {
     var body: some View {
         VStack{
             HStack(){
-                Image(systemName: actualRecipe.imageName)
+                Image(actualRecipe.imageName)
                     .resizable()
-                    .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
+                    .scaledToFit()
+                    .foregroundColor(Color("YellowColor"))
                     .frame(width: 30, height: 30)
                     
                 Text(actualRecipe.title)
@@ -30,16 +31,15 @@ struct RecipeDetailView: View {
                 .foregroundColor(Color(red: 0.9803921568627451, green: 0.8745098039215686, blue: 0.4745098039215686))
                 
             ScrollView{
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 10){
                     ForEach(actualRecipe.ingredients, id: \.self) { ingredient in
                         Text(ingredient)
                             .multilineTextAlignment(.leading)
-                        Spacer()
                         
                     }
-                    
                 }
                 .padding(.leading ,15)
+                .padding(.bottom, 10)
                 VStack(alignment: .center) {
                     NavigationLink(destination: StepView(viewModel: StepViewModel(), recipeId: actualRecipe.id)) {
                         Text("Prepare")

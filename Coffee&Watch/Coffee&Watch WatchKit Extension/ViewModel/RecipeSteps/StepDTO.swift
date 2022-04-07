@@ -6,13 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct StepDTO {
     var preparation: String
     var preparationTime: Int
-    var icon: StepIcon = .something
-}
-
-enum StepIcon {
-    case something
+    var icon: String
 }

@@ -13,7 +13,7 @@ struct Recipe {
     var imageName:String
     var complexity: Complexity
     var ingredients: [String]
-    var preparation: [(String, Int)]
+    var preparation: [(String, Int, String)]
 }
 
 enum Complexity: CustomStringConvertible {
