@@ -22,7 +22,7 @@ class ListViewModel{
             }
             
             recipesArray.append(RecipeDTO(id: recipe.id,
-                                          title: recipe.title,
+                                          title: recipe.title, imageName: recipe.imageName,
                                           complexity: recipe.complexity.description,
                                           time: "\(preparationTime) min",
                                           ingredients: recipe.ingredients))
