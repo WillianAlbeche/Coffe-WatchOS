@@ -11,10 +11,13 @@ struct StepView: View {
     @State private var currentIndex = 0
     private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     
+    @ObservedObject var viewModel: StepViewModel
+
     var textButton: String = "Next"
     var steps: [RecipeDTO] = []
     
     var body: some View {
+        
         VStack {
             VStack {
                 HStack(alignment: .center){
@@ -54,13 +57,14 @@ struct StepView: View {
                 DefaultButton(textButton: textButton)
             }
             .offset(y:30)
+        }.onAppear {
+            viewModel.getRecipe(id: 1)
         }
     }
 }
 
-
 struct Step_Previews: PreviewProvider {
     static var previews: some View {
-        StepView()
+        StepView(viewModel: StepViewModel())
     }
 }
