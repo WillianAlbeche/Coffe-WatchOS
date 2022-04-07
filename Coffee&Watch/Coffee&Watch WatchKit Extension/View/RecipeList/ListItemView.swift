@@ -12,23 +12,38 @@ struct ListItemView: View {
     @State var recipe: RecipeDTO
     
     var body: some View {
-        VStack(spacing: 33) {
+        ZStack{
             HStack{
-                Text(recipe.title)
+                VStack(alignment:.leading, spacing:9) {
+                    Spacer()
+                    Image(uiImage: UIImage(named: recipe.imageName) ?? UIImage(systemName: "cup.and.saucer.fill")!)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40, alignment: Alignment.center)
+                    Text(recipe.title)
+                        .font(.system(size: 20))
+                        .foregroundColor(Color(UIColor(named: "YellowColor")!))
+                        .fontWeight(.semibold)
+                    Text(recipe.complexity)
+                }
+                .padding()
                 Spacer()
             }
-            HStack{
-                Text(recipe.time)
+            VStack {
+                HStack{
+                    Spacer()
+                    Text(recipe.time)
+                        .padding()
+                }
                 Spacer()
-                Text(recipe.complexity)
             }
+            
         }
-        .padding(.horizontal)
     }
 }
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(recipe: RecipeDTO(id: 0, title: "teste", complexity: "ppp", time: "10 min", ingredients: ["3 tablespoons of coffee granules"]))
+        ListItemView(recipe: RecipeDTO(id: 0, title: "teste", imageName: "cup.and.saucer.fill", complexity: "ppp", time: "10 min", ingredients: ["3 tablespoons of coffee granules"]))
     }
 }
