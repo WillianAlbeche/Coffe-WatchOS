@@ -18,11 +18,13 @@ struct StepView: View {
     var recipeId: Int
     
     var body: some View {
-
+        
         VStack {
             VStack {
                 HStack(alignment: .center) {
-                    ProgressBar()
+                    //change viewModwel to steps
+                    let percentCalculate = Double(currentIndex)/Double(viewModel.getRecipeSteps(recipeId: recipeId).count)
+                    ProgressBar(totalStepsRecipe: viewModel.getRecipeSteps(recipeId: recipeId).count, percentProgress: Binding.constant(percentCalculate))
                 }
                 VStack {
                     ScrollViewReader { proxy in
@@ -37,29 +39,30 @@ struct StepView: View {
                                 .onReceive(timer, perform: { _ in
                                     withAnimation {
                                         currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
-                                        print(currentIndex)
+//                                        print(currentIndex)
                                         proxy.scrollTo(currentIndex)
                                     }
                                 })
                             }
-//                            Button(action: {
-//                                withAnimation {
-//                                    proxy.scrollTo(currentIndex + 1)
-//                                }
-//                            }, label: {
-//                                Text("Next")
-//                            })
+                            //                            Button(action: {
+                            //                                withAnimation {
+                            //                                    proxy.scrollTo(currentIndex + 1)
+                            //                                }
+                            //                            }, label: {
+                            //                                Text("Next")
+                            //                            })
                         }
                     }
                 }
             }
             VStack {
-                DefaultButton(textButton: textButton)
+                    DefaultButton(textButton: textButton)
             }
+            
             .offset(y:30)
         }.onAppear {
             steps = viewModel.getRecipeSteps(recipeId: recipeId)
-//            viewModel.getRecipe(id: 1)
+            //            viewModel.getRecipe(id: 1)
         }
     }
 }
