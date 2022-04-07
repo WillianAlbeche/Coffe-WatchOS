@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StepView: View {
     @State private var currentIndex = 0
-    private let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 4.1, on: .main, in: .common).autoconnect()
     
     @ObservedObject var viewModel: StepViewModel
     @State var steps: [StepDTO] = []
@@ -35,6 +35,7 @@ struct StepView: View {
                                             .tag(index)
                                     }
                                 }
+                                .padding(.horizontal)
                                 .onReceive(timer, perform: { _ in
                                     withAnimation {
                                         currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
