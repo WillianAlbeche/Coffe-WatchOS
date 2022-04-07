@@ -11,8 +11,8 @@ struct ContentView: View {
     
     var body: some View {
 
-        ListView()
-
+        //ListView()
+        FinalView ()
 //        Button(action: {
 //            ReceitaMinuto().mostraDetalhes(receita: Receitas.cafePeleCopa)
 //        }, label: {
