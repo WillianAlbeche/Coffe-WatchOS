@@ -16,8 +16,22 @@ struct FinalView: View {
         VStack (alignment: .center ){
             ZStack {
                 Circle()
-                    .fill(Color.greenPrimary)
+                    .fill(Color("greenSecondary").opacity(0.2))
+                    
+                    .frame(width: 123, height: 123 )
+                    
+                Circle()
+                    .fill(Color("greenPrimary"))
+                    .frame(width: 79.07, height: 79.07 )
+                Image("Frame66")
+                    .frame(width: 51, height: 52)
+                    
             }
+            Spacer()
+            Text("Enjoy your coffee!")
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+                
        }
     }
 }
@@ -27,6 +41,4 @@ struct FinalView_Previews: PreviewProvider {
         FinalView()
     }
 }
-extension Color {
-    static let greenPrimary = Color("greenPrimary")
-}
+
