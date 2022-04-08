@@ -10,6 +10,7 @@ import SwiftUI
 struct ProgressButton: View {
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var progress = CGFloat(0)
+    @Binding var stepProgress: CGFloat
 
     var body: some View {
         ZStack {
@@ -22,13 +23,16 @@ struct ProgressButton: View {
             withAnimation {
                 progress = progress < CGFloat(1) ? progress + CGFloat(0.34) : 0
             }
-
         })
     }
-}
 
-struct ProgressButton_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgressButton()
+    private func updateView() {
+        progress = $stepProgress.wrappedValue
     }
 }
+
+//struct ProgressButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProgressButton(stepLength: <#Binding<CGFloat>#>)
+//    }
+//}

@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct StepView: View {
-    @State private var currentIndex = 0
-    private let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
-    
     @ObservedObject var viewModel: StepViewModel
     @State var steps: [StepDTO] = []
-    
-    var textButton: String = "Next"
+    @State private var currentIndex = 0
+
+    @State var stepProgress = CGFloat(0)
+
+    private let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
     var recipeId: Int
     
     var body: some View {
-        
         VStack {
             VStack {
                 HStack(alignment: .center) {
@@ -47,9 +46,9 @@ struct StepView: View {
                 }
             }
             VStack {
-                ProgressButton()
+                ProgressButton(stepProgress: $stepProgress)
             }
-            
+
             .offset(y:30)
         }.onAppear {
             steps = viewModel.getRecipeSteps(recipeId: recipeId)

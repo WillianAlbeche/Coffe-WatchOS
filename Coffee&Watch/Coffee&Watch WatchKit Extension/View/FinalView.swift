@@ -8,9 +8,6 @@
 import SwiftUI
 import Foundation
 
-
-
-
 struct FinalView: View {
     var body: some View {
         VStack (alignment: .center ){

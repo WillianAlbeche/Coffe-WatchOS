@@ -11,7 +11,7 @@ struct StepInstructionView: View {
     var step: StepDTO
     
     var body: some View {
-        VStack{
+        VStack {
             Image(step.icon)
                 .resizable()
                 .frame(width: 36, height: 38)
@@ -22,14 +22,11 @@ struct StepInstructionView: View {
                 .lineLimit(3)
                 .frame(width: 180, height: 60, alignment: .center)
         }
-        .onAppear() {
-            print(step)
-        }
     }
 }
 
 struct StepInstructionView_Previews: PreviewProvider {
     static var previews: some View {
-        StepInstructionView(step: StepDTO(preparation: "prepara", preparationTime: 3, icon: "asset4"))
+        StepInstructionView(step: StepDTO(preparation: "In a bowl, add in the coffee, hot water, and granulated sugar.", preparationTime: 3, icon: "asset3"))
     }
 }

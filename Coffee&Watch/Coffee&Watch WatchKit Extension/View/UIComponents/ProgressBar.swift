@@ -15,7 +15,6 @@ struct ProgressBar: View {
     init(totalStepsRecipe: Int, percentProgress: Binding<Double>) {
         self.totalStepsRecipe = totalStepsRecipe
         self._percentProgress = percentProgress
-        
     }
     
     var body: some View {
@@ -27,12 +26,8 @@ struct ProgressBar: View {
             RoundedRectangle(cornerRadius: 3.5)
                 .foregroundColor(.green)
                 .frame(width: 195 * self.percentProgress, height: 3)
-                
-            
         }
-        
     }
-
 }
 
 struct ProgressBar_Previews: PreviewProvider {
