@@ -11,6 +11,8 @@ struct StepView: View {
     @ObservedObject var viewModel: StepViewModel
     @State var steps: [StepDTO] = []
     var recipeId: Int
+    @State private var viewLink: Int? = 0
+    @State private var showEnjoyView = false
 
     @State var recipeProgress = 0.0
     @State var stepProgress = CGFloat(0)
@@ -20,7 +22,12 @@ struct StepView: View {
 
     private func goToNextStep() {
         withAnimation {
-            currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
+            if currentIndex < steps.count {
+                currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
+            } else {
+                print("Go to EnjoyYourCoffeeView")
+                showEnjoyView = true
+            }
         }
     }
 
@@ -33,68 +40,35 @@ struct StepView: View {
     }
 
     var body: some View {
-        GeometryReader { proxy in
-            VStack(spacing: 12) {
-                ProgressBar(percentProgress: Binding.constant(progressBarCalculation()))
-                TabView(selection: $currentIndex) {
-                    ForEach(Array(zip(steps.indices, steps)), id: \.0) { index, step in
-                        StepInstructionView(step: step)
-                            .tag(index)
+        NavigationView {
+            GeometryReader { proxy in
+                VStack(spacing: 12) {
+                    ProgressBar(percentProgress: Binding.constant(progressBarCalculation()))
+                    TabView(selection: $currentIndex) {
+                        ForEach(Array(zip(steps.indices, steps)), id: \.0) { index, step in
+                            StepInstructionView(step: step)
+                                .tag(index)
+                        }
                     }
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .tabViewStyle(PageTabViewStyle())
+                    .frame(width: proxy.size.width, height: proxy.size.height * 0.73)
+                    Button(action: {
+                        goToNextStep()
+                    }, label: {
+                        ProgressButton(stepProgress: $stepProgress)
+                            .frame(width: proxy.size.width * 0.93)
+                    })
                 }
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .tabViewStyle(PageTabViewStyle())
-                .frame(width: proxy.size.width, height: proxy.size.height * 0.73)
-                Button(action: {
+                .onAppear() {
+                    steps = viewModel.getRecipeSteps(recipeId: recipeId)
+                }
+                .onReceive(timer, perform: { _ in
                     goToNextStep()
-                }, label: {
-                    ProgressButton(stepProgress: $stepProgress)
-                        .frame(width: proxy.size.width * 0.93)
                 })
+                .background(NavigationLink(destination: EnjoyYourCoffeeView(), isActive: $showEnjoyView) {EmptyView()} )
             }
-            .onAppear() {
-                steps = viewModel.getRecipeSteps(recipeId: recipeId)
-            }
-            .onReceive(timer, perform: { _ in
-                goToNextStep()
-            })
         }
-
-//        VStack {
-//            VStack {
-//                HStack(alignment: .center) {
-//                    let percentCalculate = Double(currentIndex)/Double(viewModel.getRecipeSteps(recipeId: recipeId).count)
-//                    ProgressBar(totalStepsRecipe: viewModel.getRecipeSteps(recipeId: recipeId).count, percentProgress: Binding.constant(percentCalculate))
-//                }
-//                VStack {
-//                    ScrollViewReader { proxy in
-//                        VStack {
-//                            ScrollView(.horizontal, showsIndicators: false) {
-//                                HStack {
-//                                    ForEach(Array(zip(steps.indices, steps)), id: \.0) { index, step in
-//                                        StepInstructionView(step: step)
-//                                            .tag(index)
-//                                    }
-//                                }
-//                                .onReceive(timer, perform: { _ in
-//                                    withAnimation {
-//                                        currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
-//                                        proxy.scrollTo(currentIndex)
-//                                    }
-//                                })
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            VStack {
-//                ProgressButton(stepProgress: $stepProgress)
-//            }
-//
-//            .offset(y:30)
-//        }.onAppear {
-//            steps = viewModel.getRecipeSteps(recipeId: recipeId)
-//        }
     }
 }
 

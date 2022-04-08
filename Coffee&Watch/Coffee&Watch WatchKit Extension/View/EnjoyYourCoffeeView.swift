@@ -1,5 +1,5 @@
 //
-//  FinalView.swift
+//  EnjoyYourCoffeeView.swift
 //  Coffee&Watch WatchKit Extension
 //
 //  Created by Bárbara Araújo Paim  on 07/04/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-struct FinalView: View {
+struct EnjoyYourCoffeeView: View {
     var body: some View {
         VStack (alignment: .center ){
             ZStack {
@@ -35,7 +35,7 @@ struct FinalView: View {
 
 struct FinalView_Previews: PreviewProvider {
     static var previews: some View {
-        FinalView()
+        EnjoyYourCoffeeView()
     }
 }
 
