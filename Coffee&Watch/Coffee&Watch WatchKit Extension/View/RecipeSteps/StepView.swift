@@ -15,10 +15,10 @@ struct StepView: View {
     @State private var showEnjoyView = false
 
     @State var recipeProgress = 0.0
-    @State var stepProgress = CGFloat(0)
+    @State var stepProgress = CGFloat(0.2 / 4.4)
 
     @State private var currentIndex = 0
-    private let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
 
     private func goToNextStep() {
         withAnimation {
@@ -59,13 +59,13 @@ struct StepView: View {
                             .frame(width: proxy.size.width * 0.93)
                     })
                 }
+                .background(NavigationLink(destination: EnjoyYourCoffeeView(), isActive: $showEnjoyView) {EmptyView()} )
                 .onAppear() {
                     steps = viewModel.getRecipeSteps(recipeId: recipeId)
                 }
                 .onReceive(timer, perform: { _ in
                     goToNextStep()
                 })
-                .background(NavigationLink(destination: EnjoyYourCoffeeView(), isActive: $showEnjoyView) {EmptyView()} )
             }
         }
     }
