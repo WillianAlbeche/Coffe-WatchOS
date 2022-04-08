@@ -8,21 +8,6 @@
 import Foundation
 
 class StepViewModel: ObservableObject {
-
-//    func getRecipe (id: Int)  {
-//        addStep(recipe: LocalData.recipes[id])
-//    }
-//
-//    func addStep(recipe: Recipe) {
-//        var ingredients: [Ingredient]
-//
-//        ingredients = recipe.ingredients
-//
-//        for ingredient in ingredients {
-//            stepsDTO.append(StepDTO(preparation: ingredient.preparation, preparationTime: ingredient.preparationTime))
-//        }
-//    }
-    
     func getRecipeSteps(recipeId: Int) -> [StepDTO] {
         var stepsDTO: [StepDTO] = []
 

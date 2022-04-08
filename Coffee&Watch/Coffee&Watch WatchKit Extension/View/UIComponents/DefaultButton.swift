@@ -13,12 +13,10 @@ struct DefaultButton: View {
     var body: some View {
         Button(action: {
             print("Apertado!")
-            
         }, label: {
             Text(textButton)
                 .font(.system(size: 20))
                 .fontWeight(.semibold)
-            
         })
         .frame(width: 182, height: 36)
         .background(.white)

@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct ProgressBar: View {
-    @State var totalStepsRecipe: Int
     @Binding var percentProgress: Double
-    //  total de passos = 100 / pelo numero de steps
     
-    init(totalStepsRecipe: Int, percentProgress: Binding<Double>) {
-        self.totalStepsRecipe = totalStepsRecipe
+    init(percentProgress: Binding<Double>) {
         self._percentProgress = percentProgress
-        
     }
     
     var body: some View {
@@ -27,16 +23,12 @@ struct ProgressBar: View {
             RoundedRectangle(cornerRadius: 3.5)
                 .foregroundColor(.green)
                 .frame(width: 195 * self.percentProgress, height: 3)
-                
-            
         }
-        
     }
-
 }
 
 struct ProgressBar_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressBar(totalStepsRecipe: 1, percentProgress: Binding.constant(0.30))
+        ProgressBar(percentProgress: Binding.constant(0.30))
     }
 }

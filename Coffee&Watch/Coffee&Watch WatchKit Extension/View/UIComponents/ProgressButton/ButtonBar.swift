@@ -16,7 +16,7 @@ struct ButtonBar: View {
                 Rectangle()
                     .foregroundColor(.gray)
                 Rectangle()
-                    .foregroundColor(.green)
+                    .foregroundColor(Color("greenPrimary"))
                     .frame(width: min(progress * geometry.size.width, geometry.size.width))
             }
         }
