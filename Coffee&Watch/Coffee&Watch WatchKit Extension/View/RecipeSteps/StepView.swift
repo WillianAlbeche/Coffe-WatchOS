@@ -25,7 +25,6 @@ struct StepView: View {
             if currentIndex < steps.count {
                 currentIndex = currentIndex < steps.count ? currentIndex + 1 : 0
             } else {
-                print("Go to EnjoyYourCoffeeView")
                 showEnjoyView = true
             }
         }
