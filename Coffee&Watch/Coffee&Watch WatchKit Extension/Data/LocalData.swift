@@ -82,13 +82,4 @@ struct LocalData {
                                ("Serve with a crumbled Biscoff cookie and cookie on the side.", 5, "asset3")
                               ])
         ]
-
-    static var stepsDTO = [
-        StepDTO(preparation: "Whisk vigorously for around 5-8 minutes until thick and creamy, then set aside.",
-                preparationTime: 5, icon: "asset3"),
-        StepDTO(preparation: "Spoon of coffee cream ontop.",
-                preparationTime: 5, icon: "asset3"),
-        StepDTO(preparation: "Serve with a crumbled Biscoff cookie and cookie on the side.",
-                preparationTime: 5, icon: "asset3"),
-    ]
 }

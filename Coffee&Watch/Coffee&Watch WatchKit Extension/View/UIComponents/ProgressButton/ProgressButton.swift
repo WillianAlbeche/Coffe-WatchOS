@@ -21,7 +21,7 @@ struct ProgressButton: View {
         }
         .onReceive(timer, perform: { _ in
             withAnimation {
-                progress = progress < CGFloat(1) ? progress + CGFloat(0.34) : 0
+                progress = progress < CGFloat(1) ? progress + CGFloat(0.25) : 0
             }
         })
     }
